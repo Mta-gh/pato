@@ -1,0 +1,44 @@
+.sect {
+    display: grid;
+    margin: 6vh 0;
+}
+
+.sect-two {
+    grid-template-columns: repeat(2, 1fr);
+    // background-image: url(../images/icons/pattern1.png);
+    // background-repeat: repeat;
+    .txt-bloc, .img-bloc {
+        margin: 4vw;
+    }
+    .txt-bloc {
+        margin-left: 0;
+    }
+    .img-bloc {
+        margin-right: 0;
+        width: 70%;
+        img {
+            border-radius: 10px;
+        }
+    }
+    a {
+        letter-spacing: 1px;
+    }
+}
+
+.sect-solo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    h2 {
+        color: $white;
+    }
+}
+
+.sect-discover {
+    background-image: url(../../img/bg-intro-01.jpg);
+    height: 45vh;
+}
+

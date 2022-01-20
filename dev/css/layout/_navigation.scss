@@ -1,0 +1,49 @@
+.top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3vh;
+    width: 100%;
+    a {
+        font-size: .8rem;
+        margin-left: 1.5rem;
+    }
+    a:nth-of-type(1) {
+        margin-left: 0;
+    }
+    
+    .nav-right {
+        display: flex;
+        align-items: center;
+        .head-socials {
+            a {
+                margin-left: 1rem;
+            }
+            a:nth-of-type(1) {
+                margin-left: 0;
+            }
+        }
+        .elBurgerito {
+            width: 30px;
+            height: 40px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            margin-left: 30px;
+            cursor: pointer;
+            .burger-line {
+                background: $white;
+                width: 90%;
+                height: 2px;
+                margin: 5px 0;
+                border-radius: 2px;
+                transition: all .4s ease-in-out;
+                
+            }
+            &:hover .burger-line{
+                background: $pato-red;
+            }
+        }
+    }
+}

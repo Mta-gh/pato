@@ -1,0 +1,48 @@
+.footer {
+    background-color: $blck-txt;
+    h4 {
+        color: $white;
+    }
+    p {
+        color: $gris-txt;
+    }
+    a {
+        text-transform: lowercase;
+    }
+    .top-foot {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        ". twitter gridy"
+        ". twitter gridy"
+        ;
+        a {
+            color: $pato-red;
+        }
+        .txt-twit {
+            grid-area: twitter;
+        }
+        .gallery {
+            grid-area: gridy;
+            .gall-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                width: 100%;
+                .img-grid {
+                    width: calc((100% - 50px) / 4 );
+                    background: url(../../img/photo-gallery-01.jpg) center/cover;
+                }
+            }
+        }
+        
+    }
+
+
+
+    .bottom-foot {
+        a {
+        color: $gris-txt;
+        }
+    }
+}

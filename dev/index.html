@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <title>🍽️ Patopatouille 🍽️</title>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
+    
+    <header class="header">
+        <div class="wrapper">
             <nav class="top-nav">
                 <div class="logo">
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">
@@ -17,33 +20,42 @@
                     </a>
                 </div>
                 <nav class="head-nav">
-                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">menu</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">home</a>
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">menu</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">reservation</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">gallery</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">about</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">blog</a>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="nav-links">contact</a>
                 </nav>
-                <nav class="head-socials">
-                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"></a>
-                </nav>
-                <div class="elBurgerito"></div>
+                <div class="nav-right">
+                    <nav class="head-socials">
+                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a>
+                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </nav>
+                    <div class="elBurgerito">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
+                </div>
             </nav>
-            <span>
-                welcome to
-            </span>
-            <h1>
-                Pato Place
-            </h1>
-            <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="btn">look at menu</a>
-        </header>
-        <main class="main">
+            <div class="head-txt">
+                <h3>
+                    welcome to
+                </h3>
+                <h1>
+                    Pato Place
+                </h1>
+                <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer" class="btn">look at menu</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
             
             <!-- First section 🐟 -->
-            <section class="sect sect-welcome">
+            <section class="sect sect-two sect-welcome">
                 <!--🎵 txt on the Left  -->
                 <article class="txt-bloc">
                     <h3>
@@ -52,311 +64,319 @@
                     <h2>
                         Welcome
                     </h2>
+                    <p>
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+                    </p>
                     <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">
                         our story
+                        <i class="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </article>
                 <!-- img on the right 🎵-->
-                <div>
+                <div class="img-bloc">
                     <img src="img/our-story-01.jpg" alt="a dead fish">
                 </div>
             </section>
-            <!-- 🔍 discover -->
-            <section class="sect sect-discover">
-                <h3>Discover</h3>
-                <h2>Pato Place</h2>
-            </section>
-            
-            <!-- 🏙️ + 🩸 + 🍷-->
-            <section class="sect sect-3blocs">
-                <!-- 🏙️ -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-                <!-- 🩸 -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-                <!-- 🍷 -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-            </section>
-            
-            <!-- menu 📓 -->
-            <section class="sect sect-menu">
-                <div class="sect-titles">
-                    <h3>Discover</h3>
-                    <h2>our menu</h2>
-                </div>
-                <div class="grid-menu">
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">lunch</a>
-                    </article>
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">dinner</a>
-                    </article>
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">drink</a>
-                    </article>
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">starters</a>
-                    </article>
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">happy hour</a>
-                    </article>
-                    <article class="art-menu">
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">desert</a>
-                    </article>
-                </div>
-            </section>
-            
-            <!-- Events 🥳 -->
-            <section class="sect sect-events">
-                <div class="sect-titles">
-                    <h3>Upcomming</h3>
-                    <h2>events</h2>
-                </div>
-                <article class="art-event">
-                    <div class="vert">
-                        <p>
-                            08:00 PM Tuesday - 21 November 2018
-                        </p>
-                    </div>
-                    <div class="img-contain"></div>
-                    <div class="event-txt">
-                        <h4>
-                            Wines during specific nights
-                        </h4>
-                        <p>
-                            Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
-                        </p>
-                        <div class="maxi-date">
-                            <span class="date-num">25</span>
-                            <span class="date-num">12</span>
-                            <span class="date-num">26</span>
-                            <span class="date-num">21</span>
+        </div>
+        
+        <!-- 🔍 discover -->
+        <section class="sect-solo sect-discover">
+            <h3>Discover</h3>
+            <h2>Pato Place</h2>
+        </section>
+        
+        <div class="wrapper">
 
-                            <span class="date-txt">days</span>
-                            <span class="date-txt">hours</span>
-                            <span class="date-txt">minutes</span>
-                            <span class="date-txt">seconds</span>
-                        </div>
-                        <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">view details</a>
-                    </div>
-                </article>
-            </section>
 
-            <!-- 📖 🪑 RESERVE-->
-            <section class="sect sect-reserve">
+        <!-- 🏙️ + 🩸 + 🍷-->
+        <section class="sect sect-3blocs">
+            <!-- 🏙️ -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
                 <div class="txt-bloc">
-                    <div class="sect-titles">
-                        <h3>Reservation</h3>
-                        <h2>book table</h2>
-                    </div>
-                    <form action=""></form>
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
                 </div>
-                <div class="img-contain">
-                    <img src="img/booking-01.jpg" alt="an ugly table">
-                </div>
-            </section>
-
-            <!-- 🤺 REVIEWS -->
-            <section class="sect sect-review">
-                <div class="sect-titles">
-                    <h3>customers say</h3>
-                    <h2>review</h2>
-                </div>
-                <div class="rev-img-contain"></div>
+            </article>
+            <!-- 🩸 -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
                 <div class="txt-bloc">
-                    <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
-                    <div class="stars"></div>
-                    <small> marie simmons - new york></small>
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
                 </div>
-            </section>
-
-            <!-- dicover video 🎥 -->
-            <section class="sect sect-discover">
+            </article>
+            <!-- 🍷 -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
+                <div class="txt-bloc">
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- menu 📓 -->
+        <section class="sect sect-menu">
+            <div class="sect-titles">
                 <h3>Discover</h3>
-                <h2>our video</h2>
-                <div class="play"></div>
-            </section>
-            
-            <!-- ⛰️ + 👨‍🍳 + 💒 -->
-            <section class="sect sect-3blocs">
-                <div class="sect-titles">
-                    <h3>latest news</h3>
-                    <h2>the blog</h2>
-                </div>
-                <!-- ⛰️ -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-                <!-- 👨‍🍳 -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-                <!-- 💒 -->
-                <article class="art-1bloc">
-                    <div class="img-contain"></div>
-                    <div class="txt-bloc">
-                        <h4>
-                            Romantic restaurant
-                        </h4>
-                        <p>
-                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
-                            Learn more
-                        </a>
-                    </div>
-                </article>
-            </section>
-
-            <!-- sign up 🖊️ -->
-            <h4>specials sign up</h4>
-            <input type="email" name="" id="">
-            <input type="button" value="sign up">
-        </main>
-        <footer class="footer">
-            <div class="top-foot">
-                <!-- contact us -->
-                <div class="txt-foot">
-                    <h5>contact us</h5>
-                    <p>
-                        8th floor, 379 Hudson St, New York, NY 10018
-                    </p>
-                    <p>
-                        (+1) 96 716 6879
-                    </p>
-                    <p>
-                        contact@site.com
-                    </p>
-                </div>
-
-                <!-- opening -->
-                <div class="txt-foot">
-                    <h5>opening times</h5>
-                    <p>
-                        09:30 AM – 11:00 PM
-                    </p>
-                    <p>
-                        Every Day
-                    </p>
-                </div>
-
-                <div class="txt-foot">
-                    <h5>latest twitter</h5>
-                    <div class="tweet">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">@colorlib</a>
-                        <p>
-                            Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">https://buff.ly/2zaSfAQ</a>
-                        <p>
-                            21 Dec 2017
-                        </p>
-                    </div>
-                    <div class="tweet">
-                        <a href="http://" target="_blank" rel="noopener noreferrer">@colorlib</a>
-                        <p>
-                            Activello is a good option. It has a slider built into that displays the featured image in the slider.
-                        </p>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">https://buff.ly/2zaSfAQ</a>
-                        <p>
-                            21 Dec 2017
-                        </p>
-                    </div>
-                </div>
-
-                <div class="gallery">
-                    <h5>gallery</h5>
-                    <div class="gall-grid">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
-                    </div>
-                </div>
+                <h2>our menu</h2>
             </div>
-
-            <div class="bottom-foot">
-                <nav class="foot-socials">
-                    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer"></a>
-                </nav>
+            <div class="grid-menu">
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">lunch</a>
+                </article>
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">dinner</a>
+                </article>
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">drink</a>
+                </article>
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">starters</a>
+                </article>
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">happy hour</a>
+                </article>
+                <article class="art-menu">
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">desert</a>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Events 🥳 -->
+        <section class="sect sect-events">
+            <div class="sect-titles">
+                <h3>Upcomming</h3>
+                <h2>events</h2>
+            </div>
+            <article class="art-event">
+                <div class="vert">
+                    <p>
+                        08:00 PM Tuesday - 21 November 2018
+                    </p>
+                </div>
+                <div class="img-contain"></div>
+                <div class="event-txt">
+                    <h4>
+                        Wines during specific nights
+                    </h4>
+                    <p>
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia
+                    </p>
+                    <div class="maxi-date">
+                        <span class="date-num">25</span>
+                        <span class="date-num">12</span>
+                        <span class="date-num">26</span>
+                        <span class="date-num">21</span>
+                        
+                        <span class="date-txt">days</span>
+                        <span class="date-txt">hours</span>
+                        <span class="date-txt">minutes</span>
+                        <span class="date-txt">seconds</span>
+                    </div>
+                    <a href="http://cepegra-labs.be/webdesign/fed2021/cours/blanc/" target="_blank" rel="noopener noreferrer">view details</a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- 📖 🪑 RESERVE-->
+        <section class="sect sect-two sect-reserve">
+            <div class="txt-bloc">
+                <div class="sect-titles">
+                    <h3>Reservation</h3>
+                    <h2>book table</h2>
+                </div>
+                <form action=""></form>
+            </div>
+            <div class="img-contain">
+                <img src="img/booking-01.jpg" alt="an ugly table">
+            </div>
+        </section>
+        
+        <!-- 🤺 REVIEWS -->
+        <section class="sect sect-review">
+            <div class="sect-titles">
+                <h3>customers say</h3>
+                <h2>review</h2>
+            </div>
+            <div class="rev-img-contain"></div>
+            <div class="txt-bloc">
+                <p>“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”</p>
+                <div class="stars"></div>
+                <small> marie simmons - new york></small>
+            </div>
+        </section>
+        
+        <!-- dicover video 🎥 -->
+        <section class="sect-solo sect-discover">
+            <h3>Discover</h3>
+            <h2>our video</h2>
+            <div class="play"></div>
+        </section>
+        
+        <!-- ⛰️ + 👨‍🍳 + 💒 -->
+        <section class="sect sect-3blocs">
+            <div class="sect-titles">
+                <h3>latest news</h3>
+                <h2>the blog</h2>
+            </div>
+            <!-- ⛰️ -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
+                <div class="txt-bloc">
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </div>
+            </article>
+            <!-- 👨‍🍳 -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
+                <div class="txt-bloc">
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </div>
+            </article>
+            <!-- 💒 -->
+            <article class="art-1bloc">
+                <div class="img-contain"></div>
+                <div class="txt-bloc">
+                    <h4>
+                        Romantic restaurant
+                    </h4>
+                    <p>
+                        Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                        Learn more
+                    </a>
+                </div>
+            </article>
+        </section>
+        
+        <!-- sign up 🖊️ -->
+        <h4>specials sign up</h4>
+        <input type="email" name="" id="">
+        <input type="button" value="sign up">
+    </div>
+</main>
+<footer class="footer">
+    <div class="wrapper">
+        <div class="top-foot">
+            <!-- contact us -->
+            <div class="txt-foot">
+                <h4>contact us</h5>
                 <p>
-                    Copyright © 2018 All rights reserved | This template is made with ❤️ by
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Colorlib</a>
+                    8th floor, 379 Hudson St, New York, NY 10018
+                </p>
+                <p>
+                    (+1) 96 716 6879
+                </p>
+                <p>
+                    contact@site.com
                 </p>
             </div>
-
-        </footer>
+            <!-- opening -->
+            <div class="txt-foot">
+                <h4>opening times</h5>
+                <p>
+                    09:30 AM – 11:00 PM
+                </p>
+                <p>
+                    Every Day
+                </p>
+            </div>
+            <div class="txt-foot txt-twit">
+                <h4>latest twitter</h5>
+                <div class="tweet">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">@colorlib</a>
+                    <p>
+                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">https://buff.ly/2zaSfAQ</a>
+                    <p>
+                        21 Dec 2017
+                    </p>
+                </div>
+                <div class="tweet">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">@colorlib</a>
+                    <p>
+                        Activello is a good option. It has a slider built into that displays the featured image in the slider.
+                    </p>
+                    <a href="http://" target="_blank" rel="noopener noreferrer">https://buff.ly/2zaSfAQ</a>
+                    <p>
+                        21 Dec 2017
+                    </p>
+                </div>
+            </div>
+            <div class="gallery">
+                <h4>gallery</h4>
+                <div class="gall-grid">
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="img-grid"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-foot">
+            <nav class="foot-socials">
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+            </nav>
+            <p>
+                Copyright © 2018 All rights reserved | This template is made with ❤️ by
+                <a href="http://" target="_blank" rel="noopener noreferrer">Colorlib</a>
+            </p>
+        </div>
     </div>
-    <script src="js/main.js"></script>
+    
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
