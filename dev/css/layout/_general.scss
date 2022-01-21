@@ -94,6 +94,12 @@ h4 {
 }
 
 .sect {
-    display: grid;
     margin: 6vh 0;
+    display: grid;
+
+    .wrapper {
+    display: grid;
+    width: 100%;
+    align-content: center;
+    }
 }
