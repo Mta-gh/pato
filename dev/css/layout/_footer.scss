@@ -5,44 +5,133 @@
     }
     p {
         color: $gris-txt;
+        
     }
-    a {
-        text-transform: lowercase;
+    .foot-date {
+        color: $dark-gris;
+        margin-top: 1rem;
     }
+
     .top-foot {
         display: grid;
+        padding: 3rem 0;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
         ". twitter gridy"
         ". twitter gridy"
         ;
+        gap: 2rem;
         a {
             color: $pato-red;
+        text-transform: lowercase;
+
+        }
+        p {
+            font-size: .8rem;
+            margin: .3rem 0 1rem 0;
         }
         .txt-twit {
             grid-area: twitter;
         }
         .gallery {
             grid-area: gridy;
-            .gall-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                width: 100%;
-                .img-grid {
-                    width: calc((100% - 50px) / 4 );
-                    background: url(../../img/photo-gallery-01.jpg) center/cover;
+                grid-template-rows: 50px repeat(3 , 5.3rem);
+                gap: .8rem;
+                h4 {
+                    grid-column: span 4;
                 }
-            }
+                .img-grid {
+                    width: 5.3rem;
+                    height: 5.3rem;
+                    background-position: center;
+                    background-size: cover;
+                    display: block;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        height: 100%;
+                        width: 100%;
+                        background-color: $pato-red;
+                        opacity: .0;
+                        position: absolute;
+                        transition: opacity .3s ease-in-out;
+
+                    }
+                    &:hover::before {
+                        opacity: .5;
+                    }
+                }
+                .img-grid:nth-of-type(1) {
+                    background-image: url(../../img/photo-gallery-01.jpg);
+                }
+                .img-grid:nth-of-type(2) {
+                    background-image: url(../../img/photo-gallery-02.jpg);
+                }
+                .img-grid:nth-of-type(3) {
+                    background-image: url(../../img/photo-gallery-03.jpg);
+                }
+                .img-grid:nth-of-type(4) {
+                    background-image: url(../../img/photo-gallery-04.jpg);
+                }
+                .img-grid:nth-of-type(5) {
+                    background-image: url(../../img/photo-gallery-05.jpg);
+                }
+                .img-grid:nth-of-type(6) {
+                    background-image: url(../../img/photo-gallery-06.jpg);
+                }
+                .img-grid:nth-of-type(7) {
+                    background-image: url(../../img/photo-gallery-07.jpg);
+                }
+                .img-grid:nth-of-type(8) {
+                    background-image: url(../../img/photo-gallery-08.jpg);
+                }
+                .img-grid:nth-of-type(9) {
+                    background-image: url(../../img/photo-gallery-09.jpg);
+                }
+                .img-grid:nth-of-type(10) {
+                    background-image: url(../../img/photo-gallery-10.jpg);
+                }
+                .img-grid:nth-of-type(11) {
+                    background-image: url(../../img/photo-gallery-11.jpg);
+                }
+                .img-grid:nth-of-type(12) {
+                    background-image: url(../../img/photo-gallery-12.jpg);
+                }
         }
-        
     }
 
 
 
     .bottom-foot {
+        background: $bot-foot ;
+        .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .9rem;
+        }
         a {
         color: $gris-txt;
+        text-transform: capitalize;
+        font-size: .9rem;
+        }
+        p {
+            a {
+                opacity: .5;    
+                }
+        }
+        .foot-socials {
+            a {
+                color: $white;
+                margin-left: 1rem;
+                font-size: 1rem;
+
+            }
+            a:nth-of-type(1) {
+                margin-left: 0;
+            }
         }
     }
 }

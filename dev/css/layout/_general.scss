@@ -4,7 +4,7 @@ body {
     color: $blck-txt;
 }
 .wrapper {
-    max-width: 60%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ a, p {
 p {
     font-size: .9rem;
     line-height: 1.7;
-    margin: 2rem 0;
+    margin: .5rem 0;
 }
 
 .sect-menu {
@@ -70,6 +70,7 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     letter-spacing: .1rem;
+    font-size: 1.4rem;
 }
 
 .txt-bloc {
@@ -90,4 +91,9 @@ h4 {
     a:hover {
         color: $pato-red;
     }
+}
+
+.sect {
+    display: grid;
+    margin: 6vh 0;
 }
