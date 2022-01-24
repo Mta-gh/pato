@@ -1,0 +1,52 @@
+.contact {
+    .header {
+        width: 100vw;
+        height: 60vh;
+        background-image: url(../img/bg-title-page-01.jpg);
+        .head-txt {
+            h1 {
+                font-size: 3.1rem;
+            }
+        }
+        
+    }
+    .main {
+        background: url(../img/pattern1.png);
+        background-repeat: repeat;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe {
+                border-radius: 15px;
+                margin: 4rem 0;
+            }
+            h4 {
+                margin-bottom: 4rem;
+            }
+            .reserve-form {
+                max-width: 80%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+                grid-template-areas: 
+                "name mail tel"
+                "mess mess mess"
+                ". sub ."
+                ;
+                margin-bottom: 4rem;
+                .form-mess {
+                    grid-area: mess;
+                    textarea {
+                        width: 100%;
+                        
+                    }
+                }
+                .btn {
+                    grid-area: sub;
+                }
+            }
+        }
+    }
+}
+

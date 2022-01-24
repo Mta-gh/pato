@@ -1,4 +1,4 @@
-
+// Section welcome et book a table
 .sect-two {
     .wrapper {
         grid-template-columns: repeat(2, 1fr);
@@ -11,8 +11,16 @@
         .img-bloc {
             margin-right: 0;
             width: 70%;
+            max-width: 390px;
+            max-height: 390px;
+            overflow: hidden;
+            border-radius: 10px;
             img {
-                border-radius: 10px;
+                height: 100%;
+                transition: transform .3s ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
         a {
@@ -21,11 +29,7 @@
     }
 }
 
-
-.sect-titles {
-    text-align: center;
-}
-
+// sections avec background fixe
 .sect-solo {
     display: flex;
     flex-direction: column;
@@ -37,12 +41,11 @@
         color: $white;
     }
 }
-
+// first section bckgrnd fixe
 .sect-discover {
     background-image: url(../../img/bg-intro-01.jpg);
     height: 45vh;
 }
-
 
 .sect-two, .sect-3blocs {
     .txt-bloc {
@@ -51,7 +54,7 @@
         }
     }
 }
-
+// sections à 3 blocs
 .sect-3blocs {
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
@@ -191,9 +194,195 @@
     h2 {
         color: $white;
     }
-    .art-events {
-        .vert {
-            text-orientation: sideways;
+    .art-event {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        text-align: center;
+        border-radius: 15px;
+        overflow: hidden;
+        a {
+            .img-contain {
+                background-image: url(../img/event-06.jpg);
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                .vert {
+                    // transform: rotate(90deg);
+                    writing-mode: vertical-lr;
+                    color: $white;
+                    position: absolute;
+                    background-color: $c-thru-red;
+                    width: 60px;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
         }
+        .event-txt {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            padding: 3rem;
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+        .maxi-date {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            text-align: center;
+            .date-txt, .date-num {
+                font-weight: 700;
+            }
+            .date-num {
+                font-size: 3rem;
+                color: $pato-red;
+            }
+            .date-txt {
+                text-transform: uppercase;
+                font-size: .8rem;
+                color: $gris-txt
+            }
+        }
+    }
+}
+
+// sect-reserve
+.sect-reserve {
+    .reserve-form {
+        font-family: 'Montserrat', sans-serif;
+        color: $dark-gris;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 2rem;
+        }
+}
+
+// sect-review
+.sect-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .rev-img-contain {
+        border-radius: 50%;
+        width: 118px;
+        height: 118px;
+        background-image: url(../img/avatar-03.jpg);
+        background-position: center;
+        background-size: cover;
+        border: 3px solid $pato-red ;
+    }
+    .txt-bloc {
+        p, small {
+            color: $dark-gris;
+        }
+        p {
+            max-width: 1000px;
+            font-size: 1.1rem;
+        }
+        small {
+            font-size: .75rem;
+            text-transform: uppercase;
+            margin-bottom: 3rem;
+        }
+        .stars {
+            color: $pato-red;
+            margin-bottom: 3rem;
+        }
+        .dots {
+            font-size: .5rem;
+            color: $gris-txt;
+            margin-bottom: 4rem;
+        }
+        i:nth-of-type(2) {
+            color: $pato-red;
+            margin: 0 5px;
+        }
+    }
+}
+
+// sect-discover
+.sect-discover {
+    height: 80vh;
+    background-image: url(../img/bg-cover-video-02.jpg);
+    .play {
+        width: 70px;
+        height: 70px;
+        background-color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s ease-in-out;
+        margin-top: 2rem;
+        &:hover {
+            transform: scale(1.2);
+            color: $white;
+            background-color: $c-thru-red;
+        }
+    }
+}
+
+
+// sect-bloginette
+
+.sect-bloginette {
+    .art-1bloc {
+        .img-contain {
+            position: relative;
+            small {
+                position: absolute;
+                bottom: 10px;
+                left: 20px;
+                color: $white;
+                background-color: rgba(0, 0, 0, 0.308);
+                padding: 4px;
+                border-radius: 2px;
+            }
+        }
+        
+    }
+    .art-1bloc:nth-of-type(1) {
+        .img-contain {
+            a {
+                background-image: url(../img/blog-01.jpg);
+            }
+        }
+    }
+    .art-1bloc:nth-of-type(2) {
+        .img-contain {
+            a {
+                background-image: url(../img/blog-02.jpg);
+            }
+        }
+    }
+    .art-1bloc:nth-of-type(3) {
+        .img-contain {
+            a {
+                background-image: url(../img/blog-03.jpg);
+            }
+        }
+    }
+}
+
+// sect-signup
+.sect-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background: url(../img/pattern1.png);
+    background-repeat: repeat;
+    input:nth-of-type(1) {
+        width: 20vw;
+        margin: 0 2rem;
     }
 }

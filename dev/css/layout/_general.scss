@@ -2,6 +2,7 @@
 body {
     overflow-x: hidden;
     color: $blck-txt;
+    font-family: 'Montserrat', sans-serif;
 }
 .wrapper {
     max-width: 1200px;
@@ -11,11 +12,11 @@ body {
 a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .7rem;
+    font-size: .75rem;
     color: $blck-txt;
 }
 
-a, p {
+a, p, .date-num, .date-txt {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -102,4 +103,77 @@ h4 {
     width: 100%;
     align-content: center;
     }
+}
+
+.sect-titles {
+    text-align: center;
+}
+
+
+input, textarea {
+    color: $gris-txt;
+    border-radius: 5px;
+    border-style: initial;
+    border: 2px solid $gris-txt;
+    padding: 10px;
+    width: 100%;
+}
+
+// form
+.form-elem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    label {
+        margin-bottom: .5rem;
+    }
+
+
+
+// animation
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(200px);
+        transform: translateY(200px);
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+}
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+}
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
 }

@@ -1,13 +1,15 @@
 .header {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../img/bg-intro-04.jpg);
+    background-image: url(../img/bg-intro-01.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
     color: $white;
     h3 {
         font-size: 3.7rem;
+        animation: 1.3s ease-in-out slideDown;
+
     }
         a:not(.btn) {
             color: $white;
@@ -30,5 +32,10 @@
         }
         a {
             transition: all .4s ease-in-out;
+            animation: 1.3s ease-in-out rotate;
+
+        }
+        h1 {
+            animation: 1.3s ease-in-out slideUp;
         }
 }
