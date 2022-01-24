@@ -1,10 +1,22 @@
-const { SassColor } = require("sass")
 
-const { SassColor } = require("sass")
+let link = document.querySelector(".elBurgerito")
+let contact = document.querySelector(".burger-pop")
+let cross = document.querySelector(".cross")
+let overlay = document.querySelector(".overlay")
 
-const { SassColor } = require("sass")
 
-const { SassColor } = require("sass")
+link.addEventListener('click', function() {
+    contact.classList.toggle("active");
+    overlay.classList.toggle("overlon");
 
-const { SassColor } = require("sass")
+});
 
+cross.addEventListener('click', function() {
+    contact.classList.toggle("active");
+    overlay.classList.toggle("overlon");
+});
+
+overlay.addEventListener('click', function() {
+    contact.classList.toggle("active");
+    overlay.classList.toggle("overlon");
+});
