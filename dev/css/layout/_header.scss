@@ -38,3 +38,15 @@
             animation: 1.3s ease-in-out slideUp;
         }
 }
+
+.contact, .blog {
+    .header {
+        width: 100vw;
+        height: 60vh;
+        .head-txt {
+            h1 {
+                font-size: 3.1rem;
+            }
+        }
+    }
+}

@@ -119,6 +119,14 @@ input, textarea {
     width: 100%;
 }
 
+
+.img-contain {
+    background-position: center;
+    background-size: cover;
+    
+    overflow: hidden;
+}
+
 // form
 .form-elem {
     display: flex;
