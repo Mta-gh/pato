@@ -25,3 +25,12 @@
         color: $white;
     }
 }
+
+.top-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 1rem;
+    z-index: 2;
+    background-color: rgba($color: #111111, $alpha: .5);
+}

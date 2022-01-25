@@ -8,7 +8,7 @@ let overlay = document.querySelector(".overlay")
 link.addEventListener('click', function() {
     contact.classList.toggle("active");
     overlay.classList.toggle("overlon");
-
+    
 });
 
 cross.addEventListener('click', function() {
@@ -20,3 +20,7 @@ overlay.addEventListener('click', function() {
     contact.classList.toggle("active");
     overlay.classList.toggle("overlon");
 });
+
+
+// smooth scroll
+

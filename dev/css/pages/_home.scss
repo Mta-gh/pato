@@ -29,6 +29,11 @@
     }
 }
 
+.sect-welcome {
+    background-image: url(../img/pattern1.png);
+    background-repeat: repeat;
+}
+
 // sections avec background fixe
 .sect-solo {
     display: flex;
@@ -105,6 +110,8 @@
 }
 
 .sect-menu {
+    background-image: url(../img/pattern1.png);
+    background-repeat: repeat;
     .grid-menu {
         display: grid;
         gap: 2rem;
@@ -115,6 +122,7 @@
         "lun din sta"
         "hap hap des"
         ;
+        
         .art-menu {
             border-radius: 15px;
             display: flex;
@@ -127,7 +135,7 @@
             }
             .img-contain {
                 position: absolute;
-                z-index: -1;
+                z-index: 0;
                 height: 100%;
                 width: 100%;
                 transition: transform .3s ease-in-out;
@@ -139,6 +147,7 @@
                 border-radius: 15px;
                 font-size: 1.4rem;
                 letter-spacing: .1rem;
+                z-index: 1;
                 &:hover {
                     background-color: rgba(252, 44, 44, 0.8);
                     color: $white;

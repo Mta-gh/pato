@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+    padding-right: 50px;
     border-right: 1px solid rgb(219, 219, 219);
     .art-blog {
         margin-bottom: 5rem;
@@ -80,12 +81,35 @@
             }
         }
     }
+    .page-blog {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        a {
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            &:hover {
+                background-color: $dark-gris;
+                color: white;
+            }
+        }
+    }
 }
 
 .blog-links {
+    padding-left: 50px;
+    padding-top: 5rem;
+    h4 {
+        padding: 25px 0;
+    }
     .search-bar {
         display: flex;
-        width: 90%;
         justify-content: stretch;
         .input-search {
             border-radius: 0;
@@ -100,9 +124,20 @@
         display: flex;
         flex-direction: column;
     }
+    .blog-nav {
+        h4 {
+            border-bottom: 1px solid rgb(219, 219, 219);
+            margin-bottom: 0;
+        }
+        .blog-nav-links {
+            border-bottom: 1px solid rgb(219, 219, 219);
+            padding: 8px 0;
+        }
+    }
     .popular-nav {
         .popular-nav-blocs {
             display: flex;
+            margin-bottom: 20px;
             .popular-img {
                 width: 70px;
                 height: 70px;
@@ -131,8 +166,33 @@
                     background-image: url(../img/blog-15.jpg);
                 }
             }
+            .popular-txt-bloc {
+                margin-left: 15px;
+                a {
+                    color: black;
+                    font-weight: 700;
+                }
+                p {
+                    color: $gris-txt;
+                    font-size: .8rem;
+                }
+            }
+        }
+        .popular-nav-blocs:nth-of-type(5) {
+            margin-bottom: 0;
         }
         
+    }
+    .archive-nav {
+        .archive-line {
+            display: flex;
+            align-items: center;
+            p {
+                margin-left: auto;
+                color: $gris-txt;
+                font-size: .8rem;
+            }
+        }
     }
 }
 
