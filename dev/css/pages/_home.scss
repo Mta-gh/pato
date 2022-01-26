@@ -270,7 +270,7 @@
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(4, 1fr);
         gap: 2rem;
-        }
+    }
 }
 
 // sect-review
@@ -393,3 +393,120 @@
         margin: 0 2rem;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .sect-two {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .img-bloc {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    .sect-3blocs {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sect-menu {
+        .grid-menu {
+            height: fit-content;
+            grid-template-columns: 100%;
+            // grid-template-rows: 4fr 4fr 1fr 2fr 2fr 2fr;
+            grid-template-rows: 60vh 60vh 15vh 30vh 30vh 30vh;
+            grid-template-areas: 
+            "lun"
+            "din"
+            "hap"
+            "dri"
+            "sta"
+            "des"
+            ;
+        }
+    }
+    
+    .sect-events {
+        height: fit-content;
+        .art-event {
+            grid-template-rows: 1fr 2fr;
+            grid-template-columns: 100%;
+            a {
+                .img-contain {
+                    .vert {
+                        writing-mode: horizontal-tb;
+                        width: 100%;
+                        height: 40px;
+                    }
+                }
+            }
+            .event-txt {
+                padding: 1.5rem;
+                .maxi-date {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(4, 1fr);
+                    grid-template-areas: 
+                    "num1 num2"
+                    "txt1 txt2"
+                    "num3 num4"
+                    "txt3 txt4"
+                    ;
+                    padding: 0 3rem;
+                    .date1 {
+                        grid-area: num1;
+                    }
+                    .date2 {
+                        grid-area: num2;
+                    }
+                    .date3 {
+                        grid-area: num3;
+                    }
+                    .date4 {
+                        grid-area: num4;
+                    }
+                    .date5 {
+                        grid-area: txt1;
+                    }
+                    .date6 {
+                        grid-area: txt2;
+                    }
+                    .date7 {
+                        grid-area: txt3;
+                    }
+                    .date8 {
+                        grid-area: txt4;
+                    }
+                    }
+                    
+                }
+            }
+        }
+        .sect-reserve {
+            .wrapper {
+                .txt-bloc {
+                    margin-right: 0;
+                }
+            }
+            .reserve-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+                .form-time, .form-date {
+                    width: 100%;
+                }
+            }
+        }
+        
+        .sect-signup {
+            flex-direction: column;
+            input:nth-of-type(1) {
+                width: 70%;
+                margin-bottom: 1rem;
+            }
+        }
+    }

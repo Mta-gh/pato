@@ -91,5 +91,29 @@
             }
         }
     }
+    
+    @media screen and (max-width: 768px) {
+        .main {
+            .wrapper {
+                .reserve-form {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+                    width: 100%;
+                    .btn {
+                        align-self: center;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .loc-call-hours {
+        flex-direction: column;
+        width: 60%;
+        .lch-blocs {
+        padding-left: 0;
+        }
+    }
 }
 
