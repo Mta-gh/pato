@@ -4,6 +4,6 @@
 
 ## Languages used
 
-> Html
-> CSS
-> Javascript
+- Html
+- CSS
+- Javascript
